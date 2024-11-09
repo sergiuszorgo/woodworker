@@ -6,11 +6,100 @@
 	<link rel="stylesheet" href="./styles.css">
 	<title>woodworker</title>
 </head>
-<body>
+<body id="body">
+	<div class="backdrop">
+		<div class="gray-field"></div>
+		<div class="mobile-menu">
+			<ul class="mobile-list">
+				<li class="mobile-item">
+					<a href="" class="mobile-link">каталог</a>
+				</li>
+				<li class="mobile-item">
+					<a href="" class="mobile-link">о компании</a>
+				</li>
+				<li class="mobile-item">
+					<div class="accordeon">
+						<input type="checkbox" name="radio" id="radio1">
+						<label for="radio1">
+							услуги
+						</label>
+						<div class="accord-text">
+							<ul class="acc-list">
+								<li>
+									<a href="" class="acc-item">ремонт домов</a>
+								</li>
+								<li>
+									<a href="" class="acc-item">строительство пристроек</a>
+								</li>
+								<li>
+									<a href="" class="acc-item">строительство террас и веранд</a>
+								</li>
+								<li>
+									<a href="" class="acc-item">строительство домиков</a>
+								</li>
+								<li>
+									<a href="" class="acc-item">строительство навесов</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="close-btn"></div>
+		</div>
+	</div>
 	<header>
-		<menu></menu>
+		<menu>
+			<a class="logo">
+				<img src="./img/Logotip_Master_Dom.png" alt="logotype">
+				 <!-- Мастер-дом -->
+			</a>
+			<ul class="header-list">
+				<li class="header-item">
+					<a href="" class="header-link">каталог домов</a>
+				</li>
+				<li class="header-item">
+					<a href="" class="header-link">о компании</a>
+				</li>
+				<li class="header-item">
+					<a href="" class="header-link">услуги</a>
+				</li>
+			</ul>
+			<div class="burger"></div>
+		</menu>
 	</header>
-	<main></main>
-	<footer></footer>
+	<main>
+		<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Напоивший рыбного текста встретил над диких знаках безорфографичный, буквенных однажды рукопись снова выйти даже алфавит приставка вопрос до она предупреждал что переулка заголовок скатился первую обеспечивает языком. Приставка это рот знаках, жизни лучше, вдали своих предупреждал безорфографичный ему гор переписывается дороге подзаголовок пустился строчка алфавит она, щеке парадигматическая. Предупреждал предупредила они маленькая вскоре образ переписывается ты которое, рот последний имени она но. Его эта они которое скатился, большой жаренные путь букв решила рукопись сбить. Бросил курсивных снова ручеек над пор оксмокс, единственное приставка выйти. Предложения дороге которое за собрал, текстов себя они, переписывается букв предупредила, журчит ipsum большой гор? Пустился текста подзаголовок обеспечивает наш всемогущая грустный одна букв живет, путь инициал текстов вершину щеке, использовало правилами собрал составитель это, о то. Свою за безорфографичный собрал имени маленькая встретил реторический живет своего власти страна сих, себя алфавит продолжил что сбить переулка они. Наш ему, языкового, всемогущая, заманивший своего единственное залетают которое сих вопроса образ текст диких предупреждал использовало это взгляд. Живет даже имеет, до дороге о наш пояс снова напоивший, выйти повстречался имени ручеек, правилами все? Скатился, моей над. Пор послушавшись страна домах ipsum его ему дороге! Приставка, одна взгляд? Там рыбного то оксмокс все последний? Что подзаголовок жизни маленький, сих языкового заглавных на берегу парадигматическая точках пояс имени раз последний, страну сбить города переписывается ему букв живет. Вершину переписывается, прямо дал себя собрал путь буквоград то, она большого моей использовало большой это! Использовало подпоясал ведущими имени безорфографичный ее имеет родного? Последний рукописи имени не собрал предложения скатился там домах рыбного журчит мир рот вдали повстречался, от всех живет переписывается проектах коварный всемогущая власти встретил продолжил возвращайся. Рукопись домах речью проектах предупреждал, решила правилами единственное lorem за, но гор мир! Толку семь парадигматическая наш запятой, продолжил сбить то всемогущая путь которое, lorem осталось?</p>
+	</main>
+	<footer>
+
+	</footer>
+	<script>
+		const buttonOpen = document.querySelector('.burger');
+		const buttonClose = document.querySelector('.close-btn');
+		const lightField = document.querySelector('.backdrop');
+		const grayField = document.querySelector('.gray-field');
+		const mobileMenu = document.querySelector('.mobile-menu')
+		const body = document.getElementById('body');
+
+		function openMenu(e) {
+			e.preventDefault();
+			lightField.classList.add('open');
+			mobileMenu.classList.add('slide');
+			body.classList.add('no-scroll');
+			buttonClose.addEventListener('click', closeMenu);
+			grayField.addEventListener('click', closeMenu);
+		}
+
+		function closeMenu(e) {
+			e.preventDefault();
+			lightField.classList.remove('open');
+			mobileMenu.classList.remove('slide');
+			body.classList.remove('no-scroll');
+		}
+
+		buttonOpen.addEventListener('click', openMenu)
+		
+	</script>
 </body>
 </html>
