@@ -1,5 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+	--main-bgcolor: #f8f4f0;	
+	--main-textcolor: #23140c;	
+	--secong-bgcolor: #f9f4f4;	
+	--third-bgcolor: #ede7e1;
+	--accent-color: #db7254;	
+	--second: #fff;	
+	--form-color: #e9dcd0;	
+	--input-form-color: #f9f7f6;	
+	--footer-bgcolor: #291b12;	
+	--footer-textcolor: #7d7d7d;
+	--border-color: #8c8c8c;
+	--transit: 0.25s;
+	--function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Inter', Arial, sans-serif;
+}
+
+body.no-scroll {
+	overflow-y: hidden;
+	position: fixed;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+/* MOBILE-MENU  */
+/* MOBILE-MENU  */
+
+.close-btn {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.close-btn::before {
+	content: '';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background-color: var(--accent-color);
+    transform: rotate(45deg);
+}
+
+.close-btn::after {
+	content: '';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+	background-color: var(--accent-color);
+    transform: rotate(-45deg);
+}
+
+.header-list {
+	display: none;
+}
+
+.backdrop {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/* width: 100%; */
+	/* height: 100vh; */
+	opacity: 0;
+	pointer-events: none;
+	transition: var(--transit);
+	z-index: 999;
+}
+
+.backdrop.open {
+	opacity: 1;
+	pointer-events: initial;
+}
+
+
+
+.gray-field {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/* width: 100%; */
+	/* height: 100vh; */
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mobile-menu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 80%;
+	background-color: var(--form-color);
+	overflow: hidden;
+	transition: var(--transit);
+	-moz-transform: translate(200%);
+	-ms-transform: translate(200%);
+	-webkit-transform: translate(200%);
+	-o-transform: translate(200%);
+	transform: translate(200%);
+}
+
+.mobile-menu.slide {
+	-moz-transform: translate(0);
+	-ms-transform: translate(0);
+	-webkit-transform: translate(0);
+	-o-transform: translate(0);
+	transform: translate(0);
+}
+
+.mobile-list {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	list-style: none;
+	padding: 60px;
+}
+
+.accordeon {
+	position: relative;
+}
+
+.accordeon label {
+	display: inline-block;
+}
+
+.accordeon label, .mobile-link {
+	font-size: 1.6em;
+	text-transform: uppercase;
+	color: var(--accent-color);
+}
+
+.accordeon input {
+	display: none;
+}
+
+.acc-list {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	list-style: none;
+}
+
+.acc-item {
+	font-size: 1.1em;
+	color: var(--accent-color);
+	text-transform: uppercase;
+}
+
+.accordeon label::before {
+    content: '\276F';
+    position: absolute;
+	left: 130px;
+	top: -3px;
+    transition: 0.5s;
+}
+
+.accordeon input:checked + label::before {
+    transform: rotate(90deg);
+}
+
+.accord-text {
+	transform: translateX(200%);
+	overflow: hidden;
+	transition: all var(--transit);
+}
+
+.accordeon input:checked + label + .accord-text {
+    height: auto;
+    padding: 10px 20px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+	transform: translateX(0);
+}
+
+/* MENU  */
+/* MENU  */
+
+header {
+	max-width: 1200px;
+	height: 90px;
+	margin: 0 auto;
+	padding: 0 20px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.burger {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	top: 0;
+	right: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.burger::before {
+	content: '';
+	position: absolute;
+	width: 32px;
+	height: 2px;
+	background-color: var(--accent-color);
+	box-shadow: 0 10px var(--accent-color);
+	transform: translateY(-10px);
+}
+
+.burger::after {
+	content: '';
+	position: absolute;
+	width: 32px;
+	height: 2px;
+	background-color: var(--accent-color);
+	transform: translateY(10px);
 }
