@@ -326,6 +326,13 @@ h1 span {
 	position: relative;
 }
 
+/* .form-content input {
+	display: inline-block;
+	height: calc(2.5rem + 2px);
+	padding: 1.5rem 1.75rem;
+	border: 1px solid #bdbdbd;
+} */
+
 .form-content input {
 	display: inline-block;
 	height: calc(2.5rem + 2px);
@@ -355,7 +362,7 @@ h1 span {
 	width: 100%;
 	font-size: 1rem;
 	font-weight: 400;
-	line-height: 1.5;
+	line-height: 1.5em;
 	color: var(--main-textcolor);
 	background-clip: padding-box;
 	border-radius: var(--b-radius);
@@ -365,11 +372,11 @@ h1 span {
 	appearance: none;
 }
 
-.form-input:focus {
+.form-input:focus, .inner-input:focus {
 	outline: none;
 }
 
-.form-label {
+.form-label, .inner-label {
 	position: absolute;
 	top: 50%;
 	left: 0.3125rem;
@@ -580,3 +587,122 @@ h4 {
 	opacity: 0.8;
 	text-align: center;
 }
+
+
+/* //INNERFORM// */
+/* //INNERFORM// */
+
+.foot-form {
+	padding: 0 20px 20px;
+	background-color: var(--form-color);
+	width: 100%;
+	border-radius: var(--b-radius);
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	margin-top: 40px;
+}
+
+.foot-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.foot-inner form {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.inner-head {
+	color: var(--main-textcolor);
+	line-height: 1.563em;
+	text-align: center;
+	font-weight: 600;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+.inner-text {
+	text-align: center;
+	margin-top: 22px;
+	margin-bottom: 30px;
+	font-size: 0.875em;
+	opacity: 0.8;
+}
+
+.inner-content {
+	position: relative;
+}
+
+.inner-input {
+	display: inline-block;
+	height: calc(2.5rem + 2px);
+	padding: 1.5rem 1.75rem;
+	border: 1px solid var(--border-color);
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5em;
+	color: var(--main-textcolor);
+	background-clip: padding-box;
+	border-radius: var(--b-radius);
+	transition: var(--form-trans);
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.inner-label {
+	
+}
+
+.inner-btn {
+	
+}
+
+.inner-btn {
+	display: inline-block;
+	padding: 20px 40px;
+	border: 1px solid transparent;
+	border-radius: var(--b-radius);
+	transition: var(--transit);
+	background-color: var(--accent-color);
+	cursor: pointer;
+	color: var(--second);
+	font-size: 1.2em;
+}
+
+.inner-btn:hover, .inner-btn:focus {
+	background-color: var(--form-color);
+	color: var(--main-textcolor);
+	border: 1px solid var(--accent-color);
+}
+
+
+.foot-house {
+	position: relative;
+	width: 1px;
+	height: 120px;
+}
+
+.foot-house img {
+	position: absolute;
+	width: 174px;
+	left: 50%;
+	top: -42%;
+	transform: translateX(-50%);
+}
+
+
+
+.inner-content .inner-input:focus~.inner-label,
+.inner-content .inner-input:not(:placeholder-shown)~.inner-label {
+	top: 0;
+	transform: translateY(-90%) scale(0.9);
+	background-color: transparent;
+	color: var(--accent-color);
+	font-weight: 600;
+}
+
