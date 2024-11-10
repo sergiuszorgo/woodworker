@@ -13,6 +13,7 @@
 	--footer-textcolor: #7d7d7d;
 	--border-color: #8c8c8c;
 	--transparent-text-color: #757575;
+	--specific-color: #f2e9e1;
 	--transit: 0.25s;
 	--form-trans: top 0.1s ease-in-out, scale 0.1s ease-in-out;
 	--function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -29,6 +30,13 @@
 body.no-scroll {
 	overflow-y: hidden;
 	position: fixed;
+}
+
+h3 {
+	font-size: 2em;
+	color: var(--main-textcolor);
+	font-weight: 500;
+	text-transform: uppercase;
 }
 
 a {
@@ -205,13 +213,17 @@ ul {
 header {
 	max-width: 1200px;
 	height: 90px;
-	margin: 0 auto;
 	padding: 0 20px;
+	margin: 0 auto;
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
+
+/* .wrapper {
+	
+} */
 
 .menu {
 	position: relative;
@@ -254,13 +266,17 @@ header {
 /* //FORMA//  */
 
 .hero {
+	width: 100%;
 	background-color: var(--main-bgcolor);
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 20px;
+}
+
+.hero-wrapper {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px 20px 40px;
 }
 
 .form-container {
@@ -269,7 +285,7 @@ header {
 	gap: 20px;
 }
 
-.main-img-text {
+h1 {
 	line-height: 38px;
 	font-size: 2em;
 	text-transform: uppercase;
@@ -277,7 +293,7 @@ header {
 	color: var(--accent-color);
 }
 
-.main-img-text span {
+h1 span {
 	color: var(--main-textcolor);
 }
 
@@ -297,7 +313,7 @@ header {
 }
 
 .top-form-img {
-	background-image: url(./img/form_pic.jpg);
+	background-image: url(./img/form_pic.webp);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -398,12 +414,21 @@ header {
 
 .feature-item {
 	position: relative;
-	padding-left: 60px;
+	padding-left: 22px;
+	display: flex;
+	justify-content: flex-start;
+	gap: 40px;
 }
 
-.feature-item::before {
+.feature-item i {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.feature-item i::before {
 	position: absolute;
-	left: 0;
 	content: '';
 	width: 44px;
 	height: 44px;
@@ -411,28 +436,25 @@ header {
 	border-radius: 50%;
 }
 
-.feature-item::after {
+.feature-item i::after {
 	content: '\2714';
 	position: absolute;
-	left: 16px;
-	top: 12px;
 }
 
 /* SERVICES */
 /* SERVICES */
 
 .our-serv {
+	width: 100%;
+}
+
+.serv-wrap {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 20px;
 }
 
-.our-serv h3 {
-	font-size: 2em;
-	color: var(--main-textcolor);
-	font-weight: 500;
-	text-transform: uppercase;
-}
+
 
 .serv-list {
 	margin-top: 20px;
@@ -447,9 +469,6 @@ header {
 	border-radius: 20px;
 }
 
-.serv-link {
-
-}
 
 .serv-card {
 	width: 100%;
@@ -470,4 +489,94 @@ header {
 	font-size: 1.8em;
 	text-align: left;
 	color: var(--footer-textcolor);
+}
+
+/* ///SPECIFIC// */
+/* ///SPECIFIC// */
+
+.specific {
+	width: 100%;
+	background-color: var(--specific-color);
+}
+
+.spec-wrap {
+	max-width: 1200px;
+	padding: 70px 20px;
+	margin: 0 auto;
+}
+
+h4 {
+	font-weight: 500;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.spec-text {
+	color: var(--main-textcolor);
+	font-size: 1.1em;
+	font-weight: 400;
+	line-height: 38px;
+}
+
+.spec-list {
+	padding-left: 40px;
+}
+
+.spec-item {
+	color: var(--main-textcolor);
+	font-size: 1.1em;
+	font-weight: 400;
+	line-height: 38px;
+}
+
+.spec-logo img {
+	width: 220px;
+}
+
+/* WHYMEMRJEFFERSON */
+/* WHYMEMRJEFFERSON */
+
+.whyme {
+	width: 100%;
+	background-color: var(--secong-bgcolor);
+}
+
+.whyme-wrap {
+	max-width: 1200px;
+	padding: 70px 20px;
+	margin: 0 auto;
+}
+
+.why-list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.why-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	padding: 0 30px;
+}
+
+.why-text1 {
+	color: var(--accent-color);
+	font-size: 4em;
+	font-weight: 600;
+	letter-spacing: 0.09em;
+}
+
+.why-text2 {
+	color: var(--main-textcolor);
+	line-height: 28px;
+	font-weight: 500;
+	font-size: 1.1em;
+}
+
+.why-text3 {
+	opacity: 0.8;
+	text-align: center;
 }
