@@ -203,11 +203,31 @@
 					<p class="why-text3">У нас большой опыт и мы работаем только с качественными материалами</p>
 				</li>
 			</ul>
+			<div class="foot-form">
+				<div class="foot-inner">
+					<p class="inner-head">подберем лучший вариант<br> под ваши запросы</p>
+					<p class="inner-text">Заполните форму и наши менеджеры свяжутся с вами в ближайшее время и помогут подобрать домик</p>
+					<form>
+						<div class="inner-content">
+							<input class="inner-input" type="name" name="name-input" id="name-input"
+							placeholder="василий">
+							<label class="inner-label" for="name-input">Ваше имя</label>
+						</div>
+						<div class="inner-content">
+							<input class="inner-input" type="tel" name="tel" id="tel-input" placeholder="+70000000" min-lenght="5" maxlength="12" required>
+							<label class="inner-label" for="tel-input">Ваш телефон</label>
+						</div>
+						<input type="submit" class="inner-btn" value="Расчитать стоимость">
+					</form>
+				</div>
+				<div class="foot-house"><img src="./img/foot-house.webp" alt="image house into footer form"></div>
+			</div>
 		</div>
 	</div>
 	<footer>
 
 	</footer>
+	
 	<script>
 		const buttonOpen = document.querySelector('.burger');
 		const buttonClose = document.querySelector('.close-btn');
