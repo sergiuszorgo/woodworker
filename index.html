@@ -18,6 +18,9 @@
 					<a href="" class="mobile-link">о компании</a>
 				</li>
 				<li class="mobile-item">
+					<a href="#footer" class="mobile-link" onclick="removeNoScroll()">Контакты</a>
+				</li>
+				<li class="mobile-item">
 					<div class="accordeon">
 						<input type="checkbox" name="radio" id="radio1">
 						<label for="radio1">
@@ -42,6 +45,7 @@
 								</li>
 							</ul>
 						</div>
+						
 					</div>
 				</li>
 			</ul>
@@ -224,12 +228,13 @@
 			</div>
 		</div>
 	</div>
-	<footer>
+	<footer id="footer">
 		<div class="foot-wrap">
 			<div class="foot-logo">
 				<img src="./img/Logotip_Master_Dom.png" alt="logotype">
 			</div>
 			<div class="foot-contacts">
+				<p class="contacti">Контакты</p>
 				<a class="foot-adr-link" href="#">
 					<svg class="foot-loc">
 						<use href="./img/svg/sprite.svg#location"></use>
@@ -288,7 +293,13 @@
 			body.classList.remove('no-scroll');
 		}
 
-		buttonOpen.addEventListener('click', openMenu)
+		function removeNoScroll() {
+			body.classList.remove('no-scroll');
+			lightField.classList.remove('open');
+			mobileMenu.classList.remove('slide');
+		}
+
+		buttonOpen.addEventListener('click', openMenu);
 	</script>
 </body>
 </html>
