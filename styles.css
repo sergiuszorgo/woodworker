@@ -706,3 +706,95 @@ h4 {
 	font-weight: 600;
 }
 
+/* FOOTER  */
+/* FOOTER  */
+
+footer {
+	width: 100%;
+	background-color: var(--footer-bgcolor);
+}
+
+.foot-wrap {
+	max-width: 1200px;
+	padding: 20px 20px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.foot-logo {
+	
+}
+
+.foot-contacts {
+	margin-top: 20px;
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+}
+
+.foot-adr-link {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.foot-loc {
+	width: 44px;
+	height: 44px;
+	fill: var(--second);
+}
+
+.addr-link-text, .addr-link-tel {
+	color: var(--second);
+	font-size: 1.1em;
+}
+
+.addr-link-text {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.foot-svg-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+}
+
+.foot-svg-link {
+
+}
+
+.foot-phone-svg {
+	width: 44px;
+	height: 44px;
+	fill: var(--second);
+}
+
+.whatsapp, .tg, .vk {
+	fill: var(--second);
+}
+
+.whatsapp {
+	width: 32px;
+	height: 32px;
+}
+
+.vk {
+	width: 40px;
+	height: 40px;
+}
+
+.tg {
+	width: 40px;
+	height: 40px;
+}
+
+.def-text {
+	text-align: center;
+	font-size: 16px;
+	color: var(--second);
+	margin-top: 40px;
+}
