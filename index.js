@@ -1,4 +1,4 @@
-import {CHAT_ID, URL_API} from './environments/key.js'
+import {CHAT_ID, URL_API} from './environment/key.js'
 
 
 const success = document.getElementById('success');
