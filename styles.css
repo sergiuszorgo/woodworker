@@ -825,3 +825,20 @@ footer {
 	color: var(--second);
 	margin-top: 40px;
 }
+
+/* ////////////////////////////////////////////BREAK POINTS////////////////////////////////// */
+
+@media (max-width: 767px) {					/*MOBILE*/
+
+}
+
+@media (min-width: 768px) {					/*TABLET*/
+
+}
+
+@media screen and (min-width: 1200px) {   	/*DESKTOP*/
+	
+}
+
+
+
