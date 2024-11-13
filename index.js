@@ -1,7 +1,6 @@
+import {CHAT_ID, URL_API} from './environments/key.js'
 
-const TOKEN = '7356224291:AAE8qvy3cWXYbvYgN8xCpn3p8u4Ali_b1kM';
-const CHAT_ID = '-1002441337293';
-const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
 const success = document.getElementById('success');
 
 document.getElementById('tg').addEventListener('submit', function(e) {
