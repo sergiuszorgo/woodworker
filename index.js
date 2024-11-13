@@ -18,13 +18,16 @@ document.getElementById('tg').addEventListener('submit', function(e) {
     .then((res) => {
         this.nameinput.value = '';
         this.tel.value = '';
-        success.innerHTML = 'message success';
+        success.innerHTML = 'Сообщение отправлено';
         success.style.display = 'block';
+        setTimeout(() => {
+            success.style.display = 'none';
+        }, 3000);
     })
     .catch((err) => {
         console.log(err);
     }) 
     .finally(() => {
-        console.log('end');
+
     })
 })
