@@ -1,7 +1,41 @@
-import {CHAT_ID, URL_API} from './environments/key.js'
-
-
+import {CHAT_ID, URL_API} from './environment/key.js'
+const buttonOpen = document.querySelector('.burger');
+const buttonClose = document.querySelector('.close-btn');
+const lightField = document.querySelector('.backdrop');
+const grayField = document.querySelector('.gray-field');
+const mobileMenu = document.querySelector('.mobile-menu')
+const body = document.getElementById('body');
 const success = document.getElementById('success');
+
+////////menu-call//////
+
+function openMenu(e) {
+    e.preventDefault();
+    lightField.classList.add('open');
+    mobileMenu.classList.add('slide');
+    body.classList.add('no-scroll');
+    buttonClose.addEventListener('click', closeMenu);
+    grayField.addEventListener('click', closeMenu);
+}
+
+function closeMenu(e) {
+    e.preventDefault();
+    lightField.classList.remove('open');
+    mobileMenu.classList.remove('slide');
+    body.classList.remove('no-scroll');
+}
+
+function removeNoScroll() {
+    body.classList.remove('no-scroll');
+    lightField.classList.remove('open');
+    mobileMenu.classList.remove('slide');
+}
+
+buttonOpen.addEventListener('click', openMenu);	
+
+
+////////////TGSCREPKA///////
+
 
 document.getElementById('tg').addEventListener('submit', function(e) {
     e.preventDefault();
@@ -31,3 +65,4 @@ document.getElementById('tg').addEventListener('submit', function(e) {
 
     })
 })
+
