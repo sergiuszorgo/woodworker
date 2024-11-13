@@ -8,9 +8,7 @@ lerna-debug.log*
 .pnpm-debug.log*
 
 
-
-/environment
-
+environment/
 
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
