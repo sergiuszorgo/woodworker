@@ -279,12 +279,17 @@
 				<p class="def-text">© 2024</p>
 		</div>
 	</footer>
-	<div class="confirm" id="confirm" style="display: block;">
+	<div class="confirm" id="confirm" style="display: none;">
 		<div class="confirm_field">
 			<p class="confirm_msg">Благодарим Вас за доверие.</p>
 			<p class="confirm_msg">Ожидайте, с вами свяжутся.</p>
 			<a href="#" class="confirm_link" onclick="modalClose()">Вернутся на сайт</a>
 		</div>
+	</div>
+	<div class="btn-up btn-up_hide">
+		<svg class="btn-up-svg">
+			<use href="./img/svg/sprite.svg#arrow-up"></use>
+		</svg>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 	
@@ -309,6 +314,10 @@
 		    body.classList.remove('no-scroll');
 		    lightField.classList.remove('open');
 		    mobileMenu.classList.remove('slide');
+		}
+		function modalClose() {
+		    body.classList.remove('no-scroll');
+		    confirm.style.display = 'none';
 		}
 	</script>
 </body>

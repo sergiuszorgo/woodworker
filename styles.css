@@ -887,6 +887,35 @@ footer {
 	border: 1px solid var(--accent-color);
 }
 
+/* //BTN UP//// */
+
+.btn-up {
+	border-radius: 50%;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+}
+
+.btn-up_hide {
+	opacity: 0;
+	transition: var(--transit);
+}
+
+.btn-up-svg {
+	fill: var(--accent-color);
+	transition: var(--transit);
+}
+
+.btn-up-svg:hover {
+	fill: var(--footer-textcolor);
+}
+
 /* ////////////////////////////////////////////BREAK POINTS////////////////////////////////// */
 
 @media (max-width: 767px) {					/*MOBILE*/
