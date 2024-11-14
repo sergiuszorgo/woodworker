@@ -5,6 +5,7 @@ const lightField = document.querySelector('.backdrop');
 const grayField = document.querySelector('.gray-field');
 const mobileMenu = document.querySelector('.mobile-menu')
 const body = document.getElementById('body');
+const confirm = document.getElementById('confirm');
 const success = document.getElementById('success');
 
 ////////menu-call//////
@@ -37,7 +38,7 @@ buttonOpen.addEventListener('click', openMenu);
 ////////////TGSCREPKA///////
 
 
-document.getElementById('tg').addEventListener('submit', function(e) {
+function sendForm(e) {
     e.preventDefault();
 
     let message = `<b>Заявка с сайта</b>\n`;
@@ -52,17 +53,30 @@ document.getElementById('tg').addEventListener('submit', function(e) {
     .then((res) => {
         this.nameinput.value = '';
         this.tel.value = '';
-        success.innerHTML = 'Сообщение отправлено';
-        success.style.display = 'block';
-        setTimeout(() => {
-            success.style.display = 'none';
-        }, 3000);
+        // success.innerHTML = 'Сообщение отправлено';
+        // success.style.display = 'block';
+        // setTimeout(() => {
+        //     success.style.display = 'none';
+        // }, 3000);
+        confirmSend();
     })
     .catch((err) => {
         console.log(err);
     }) 
     .finally(() => {
-
+        
     })
-})
+}
 
+document.getElementById('tg').addEventListener('submit', sendForm);
+document.getElementById('tg2').addEventListener('submit', sendForm);
+
+function confirmSend() {
+    body.classList.add('no-scroll');
+    confirm.style.display = 'block';
+}
+
+function modalClose() {
+    body.classList.remove('no-scroll');
+    confirm.style.display = 'none';
+}
