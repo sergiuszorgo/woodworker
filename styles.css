@@ -96,6 +96,65 @@ ul {
 	fill: var(--accent-color);
 }
 
+/* //parallax */
+
+.motiv {
+	position: relative;
+	height: 560px;
+	width: 100%;
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(./img/fonhero.jpg);
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(./img/fonhero.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-align: center;
+	vertical-align: middle;
+	background-attachment: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.motiv-content {
+	position: relative;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.motiv-head {
+	color: var(--second);
+	font-size: 2.8em;
+	font-weight: 600;
+}
+
+.motiv-text {
+	color: var(--second);
+	margin-top: 30px;
+	font-size: 1.4em;
+}
+
+.get-up {
+	display: inline-block;
+	margin-top: 30px;
+	padding: 20px 40px;
+	border: 1px solid transparent;
+	border-radius: var(--b-radius);
+	transition: var(--transit);
+	background-color: var(--accent-color);
+	cursor: pointer;
+	color: var(--second);
+	font-size: 1.2em;
+}
+
+.get-up:hover, .get-up:focus {
+	background-color: var(--form-color);
+	color: var(--main-textcolor);
+	border: 1px solid var(--accent-color);
+}
+
 .footer-logo {
 	width: 90px;
 	height: 90px;
@@ -540,7 +599,7 @@ h1 span {
 
 .spec-wrap {
 	max-width: 1200px;
-	padding: 70px 20px;
+	padding: 35px 20px;
 	margin: 0 auto;
 }
 
