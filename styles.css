@@ -41,7 +41,7 @@ body.no-scroll {
 
 h3 {
 	font-size: 2em;
-	color: var(--main-textcolor);
+	color: var(--second);
 	font-weight: 500;
 	text-transform: uppercase;
 }
@@ -672,10 +672,10 @@ h4 {
 
 .whyme {
 	width: 100%;
-	background-color: var(--secong-bgcolor);
+	background: rgba(0, 0, 0, .5);
 }
 
-.whyme-wrap {
+.whyme-wrap, .whyform-wrap {
 	max-width: 1200px;
 	padding: 70px 20px;
 	margin: 0 auto;
@@ -703,17 +703,21 @@ h4 {
 }
 
 .why-text2 {
-	color: var(--main-textcolor);
+	color: var(--second);
 	line-height: 28px;
 	font-weight: 500;
 	font-size: 1.1em;
 }
 
 .why-text3 {
-	opacity: 0.8;
+	color: var(--second);
 	text-align: center;
 }
 
+.whyform {
+	width: 100%;
+	background-color: var(--secong-bgcolor);
+}
 
 /* //INNERFORM// */
 /* //INNERFORM// */
@@ -807,7 +811,7 @@ h4 {
 
 .foot-house {
 	position: relative;
-	width: 1px;
+	width: 187px;
 	height: 120px;
 }
 
@@ -1047,8 +1051,11 @@ footer {
 		text-align: justify;
 		margin-right: 30px;
 	}
-	.foot-form {
-		padding-bottom: 60px;
+	.foot-house img {
+		width: 100%;
+		top: 0;
+		left: 0;
+		transform: translate(0, -45%);
 	}
 	.serv-item:nth-child(2n+1) {
 		margin-right: 20px;
@@ -1064,6 +1071,28 @@ footer {
 	}
 	.form-descr {
 		text-align: center;
+	}
+	.foot-form {
+		padding: 60px 20px;
+		flex-direction: row;
+		align-items: flex-start;
+	}
+	.inner-head {
+		font-size: 1.8em;
+	}
+	.inner-head, .inner-text {
+		text-align: left;
+	}
+	.foot-inner {
+		align-items: flex-start;
+		width: 50%;
+	}
+	.foot-inner form {
+		align-items: flex-start;
+	}
+	.foot-house {
+		width: 50%;
+		height: 100%;
 	}
 }
 
@@ -1119,6 +1148,7 @@ footer {
 	.serv-item:not(:nth-child(3n)) {
 		margin-right: 20px;
 	}
+	
 	.whyme-wrap h3 {
 		font-size: 3em;
 		font-weight: 600;
@@ -1135,6 +1165,21 @@ footer {
 	}
 	.why-text3 {
 		text-align: justify;
+	}
+	.whyform {
+		overflow: hidden;
+	}
+	.inner-head {
+		font-size: 2.4em;
+	}
+	.inner-text {
+		font-size: 1.1em;
+	}
+	.foot-house img {
+		width: 100%;
+		top: 0;
+		left: 0;
+		transform: translate(0, -20%);
 	}
 }
 

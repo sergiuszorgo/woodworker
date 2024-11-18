@@ -18,6 +18,22 @@
 	height: 60vh;
 }
 
+.whyme {
+	height: 90vh;
+}
+
+@media (orientation: landscape) {
+	.container--small {
+		height: 100vh;
+	}
+	.whyme {
+		height: 120vh;
+	}
+	.whyme-wrap {
+		padding: 10px 20px;
+	}
+}
+
 .parallax__container {
 	clip: rect(0, auto, auto, 0);
 	height: 100%;
@@ -46,6 +62,10 @@
 
 .bg1 {
 	background-image: url("./img/fonhero.jpg");
+}
+
+.bg2 {
+	background-image: url("./img/parallax-2.jpg");
 }
 
 /* .show-on-mobile--inline {
