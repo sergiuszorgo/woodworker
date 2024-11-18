@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./styles.css">
+	<link rel="stylesheet" href="./parallax.css">
 	<title>woodworker</title>
 </head>
 <body id="body">
@@ -187,12 +188,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="motiv">
+	<div class="container container--small">
 		<div class="motiv-content">
 			<h3 class="motiv-head">Лучший вариант под ваши запросы</h3>
 			<p class="motiv-text">Подобрать варианты</p>
 			<a href="#get-up" class="get-up">Оставить заявку</a>
 		</div>
+		<div class="parallax bg1"></div>
 	</div>
 	<div class="specific">
 		<div class="spec-wrap">
@@ -340,6 +342,13 @@
 		    body.classList.remove('no-scroll');
 		    confirm.style.display = 'none';
 		}
+	</script>
+	<!-- PARALLAX -->
+	 <script src="./parallax.js"></script>
+	 <script>
+		new universalParallax().init({
+			speed: 4
+		});
 	</script>
 </body>
 </html>
