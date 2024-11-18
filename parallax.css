@@ -1,0 +1,63 @@
+.container {
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0;
+	/* padding: 15px; */
+	position: relative;
+	width: 100%;
+}
+
+.container--small {
+	height: 60vh;
+}
+
+.parallax__container {
+	clip: rect(0, auto, auto, 0);
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -100;
+}
+
+.parallax {
+	/* can be put in a seperate class for better control */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* --------------------------- */
+	position: fixed;
+	top: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	width: 100%;
+}
+
+.bg1 {
+	background-image: url("./img/fonhero.jpg");
+}
+
+/* .show-on-mobile--inline {
+	display: none;
+}
+
+@media screen and (max-width: 480px) {
+	.hide-on-mobile {
+		display: none;
+	}
+
+	.show-on-mobile--inline {
+		display: inline;
+	}
+} */
