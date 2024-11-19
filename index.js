@@ -11,6 +11,7 @@ const confirm = document.getElementById('confirm');
 
 function openMenu(e) {
     e.preventDefault();
+    console.log("OPEN");
     lightField.classList.add('open');
     mobileMenu.classList.add('slide');
     body.classList.add('no-scroll');
