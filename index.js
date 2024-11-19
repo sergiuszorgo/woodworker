@@ -6,7 +6,6 @@ const grayField = document.querySelector('.gray-field');
 const mobileMenu = document.querySelector('.mobile-menu')
 const body = document.getElementById('body');
 const confirm = document.getElementById('confirm');
-const success = document.getElementById('success');
 
 ////////menu-call//////
 
@@ -68,8 +67,9 @@ function sendForm(e) {
     })
 }
 
-document.getElementById('tg').addEventListener('submit', sendForm);
-document.getElementById('tg2').addEventListener('submit', sendForm);
+
+const tgss = document.querySelectorAll('.tgs')
+tgss.forEach(elem => {elem.addEventListener('submit', sendForm)})
 
 function confirmSend() {
     body.classList.add('no-scroll');

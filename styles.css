@@ -1000,6 +1000,7 @@ footer {
 	justify-content: center;
 	width: 60px;
 	height: 60px;
+	z-index: 99;
 }
 
 .btn-up_hide {
