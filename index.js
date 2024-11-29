@@ -6,8 +6,16 @@ const grayField = document.querySelector('.gray-field');
 const mobileMenu = document.querySelector('.mobile-menu')
 const body = document.getElementById('body');
 const confirm = document.getElementById('confirm');
+const confirm_link = document.querySelector(".confirm_link");
+const mobLink = document.getElementById("mobile-link");
 
 ////////menu-call//////
+
+function removeNoScroll() {
+  body.classList.remove('no-scroll');
+  lightField.classList.remove('open');
+  mobileMenu.classList.remove('slide');
+}
 
 function openMenu(e) {
     e.preventDefault();
@@ -17,6 +25,7 @@ function openMenu(e) {
     body.classList.add('no-scroll');
     buttonClose.addEventListener('click', closeMenu);
     grayField.addEventListener('click', closeMenu);
+    mobLink.addEventListener('click', removeNoScroll);
 }
 
 function closeMenu(e) {
@@ -26,11 +35,7 @@ function closeMenu(e) {
     body.classList.remove('no-scroll');
 }
 
-function removeNoScroll() {
-    body.classList.remove('no-scroll');
-    lightField.classList.remove('open');
-    mobileMenu.classList.remove('slide');
-}
+
 
 buttonOpen.addEventListener('click', openMenu);	
 
@@ -110,3 +115,13 @@ const btnUp = {
   }
   
   btnUp.addEventListener();
+  
+  // modal 
+
+  function modalClose() {
+    body.classList.remove('no-scroll');
+    confirm.style.display = 'none';
+}
+
+confirm_link.addEventListener('click', modalClose);
+

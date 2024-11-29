@@ -16,10 +16,10 @@
 					<a href="" class="mobile-link">каталог</a>
 				</li>
 				<li class="mobile-item">
-					<a href="" class="mobile-link">о компании</a>
+					<!-- <a href="" class="mobile-link">о компании</a> -->
 				</li>
 				<li class="mobile-item">
-					<a href="#footer" class="mobile-link" onclick="removeNoScroll()">Контакты</a>
+					<a href="#footer" class="mobile-link" id="mobile-link" onclick="removeNoScroll()">Контакты</a>
 				</li>
 				<li class="mobile-item">
 					<div class="accordeon">
@@ -33,7 +33,7 @@
 									<a href="" class="acc-item">ремонт домов</a>
 								</li>
 								<li>
-									<a href="" class="acc-item">строительство пристроек</a>
+									<a href="extension.html" class="acc-item">строительство пристроек</a>
 								</li>
 								<li>
 									<a href="" class="acc-item">строительство террас и веранд</a>
@@ -56,7 +56,7 @@
 	<header>
 		<div class="wrapper">
 			<menu>
-				<a class="logo">
+				<a href="#" class="logo">
 					<svg class="master-logo">
 						<use href="./img/svg/sprite.svg#master"></use>
 					</svg>
@@ -67,7 +67,7 @@
 						<a href="#" class="header-link">каталог домов</a>
 					</li>
 					<li class="header-item">
-						<a href="#" class="header-link">о компании</a>
+						<!-- <a href="#" class="header-link">о компании</a> -->
 					</li>
 					<li class="header-item">
 						<a href="#" class="header-link">контакты</a>
@@ -79,7 +79,7 @@
 								<a href="#" class="invis-link">ремонт домов</a>
 							</li>
 							<li class="invis-item">
-								<a href="#" class="invis-link">строительство пристроек</a>
+								<a href="extension.html" class="invis-link">строительство пристроек</a>
 							</li>
 							<li class="invis-item">
 								<a href="#" class="invis-link">строительство террас и веранд</a>
@@ -135,7 +135,7 @@
 	</div>
 	<div class="our-serv">
 		<div class="serv-wrap">
-			<h3>Наши услуги</h3>
+			<h3><span>Наши услуги</span></h3>
 		<ul class="serv-list">
 			<li class="serv-item">
 				<a href="#" class="serv-link">
@@ -342,32 +342,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 	
 	<script type="module" src="./index.js"></script>
-	<script>
-		const body = document.getElementById('body');
-		const confirm = document.getElementById('confirm');
-		const lightField = document.querySelector('.backdrop');
-		const mobileMenu = document.querySelector('.mobile-menu');
-
-		function confirmSend() {
-		    body.classList.add('no-scroll');
-		    confirm.style.display = 'block';
-		}
-
-		function modalClose() {
-		    body.classList.remove('no-scroll');
-		    confirm.style.display = 'none';
-		}
-
-		function removeNoScroll() {
-		    body.classList.remove('no-scroll');
-		    lightField.classList.remove('open');
-		    mobileMenu.classList.remove('slide');
-		}
-		function modalClose() {
-		    body.classList.remove('no-scroll');
-		    confirm.style.display = 'none';
-		}
-	</script>
 	<!-- PARALLAX -->
 	 <script src="./parallax.js"></script>
 	 <script>
