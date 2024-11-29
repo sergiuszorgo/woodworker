@@ -650,7 +650,9 @@ h1 span {
 	padding: 20px;
 }
 
-
+.serv-wrap h3 {
+	color: var(--main-textcolor);
+}
 
 .serv-list {
 	width: 100%;
