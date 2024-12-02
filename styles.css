@@ -491,7 +491,6 @@ h1 span {
 }
 
 .top-form-img {
-	background-image: url(./img/form_pic.webp);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -499,6 +498,14 @@ h1 span {
 	height: 250px;
 	border-radius: var(--b-radius);
 	margin-bottom: 20px;
+}
+
+.parent-img {
+	background-image: url(./img/form_pic.webp);
+}
+
+.extens-hero {
+	background-image: url(./img/extense-hero.jpg);
 }
 
 .form-content, .inner-content {
@@ -718,8 +725,67 @@ h3 span {
 	margin: 0 auto;
 }
 
-.spec-wrap h3 {
+/* GALLERY  */
 
+.cage {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	margin-top: 60px;
+}
+
+.parent {
+	width: calc((100% - 20px) / 2);
+	height: 150px;
+	overflow: hidden;
+}
+
+.child {
+	width: 100%;
+  	height: 100%;
+  	background-size: cover;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+	transition: 0.5s;
+}
+
+.parent:hover .child,
+.parent:focus .child {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* SLIDERIMGIIIIS */
+
+.bg-001 {
+	background-image: url(./img/extens-img/previmg/extens-001-prv.jpg);
+}
+
+.bg-002 {
+	background-image: url(./img/extens-img/previmg/extens-002-prv.jpg);
+}
+
+.bg-003 {
+	background-image: url(./img/extens-img/previmg/extens-003-prv.jpg);
+}
+
+.bg-004 {
+	background-image: url(./img/extens-img/previmg/extens-004-prv.jpg);
+}
+
+.bg-005 {
+	background-image: url(./img/extens-img/previmg/extens-005-prv.jpg);
+}
+
+.bg-006 {
+	background-image: url(./img/extens-img/previmg/extens-006-prv.jpg);
 }
 
 h4 {
@@ -1139,6 +1205,7 @@ footer {
 	.serv-item:not(:nth-last-child(-n+2)) {
 		margin-bottom: 20px;
 	}
+	
 }
 
 @media (min-width: 768px) {
@@ -1169,6 +1236,9 @@ footer {
 	.foot-house {
 		width: 50%;
 		height: 100%;
+	}
+	.parent {
+		width: calc((100% - 40px) / 3);
 	}
 }
 
@@ -1304,6 +1374,9 @@ footer {
 	}
 	.confirm {
 		background-color: var(--second);
+	}
+	.parent {
+		height: 220px;
 	}
 }
 

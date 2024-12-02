@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/photoswipe@5.2.2/dist/photoswipe.css">
 	<link rel="stylesheet" href="./styles.css">
 	<link rel="stylesheet" href="./parallax.css">
 	<title>woodworker</title>
@@ -14,9 +15,6 @@
 			<ul class="mobile-list">
 				<li class="mobile-item">
 					<a href="" class="mobile-link">каталог</a>
-				</li>
-				<li class="mobile-item">
-					<!-- <a href="" class="mobile-link">о компании</a> -->
 				</li>
 				<li class="mobile-item">
 					<a href="#footer" class="mobile-link" id="mobile-link" onclick="removeNoScroll()">Контакты</a>
@@ -67,9 +65,6 @@
 						<a href="#" class="header-link">каталог домов</a>
 					</li>
 					<li class="header-item">
-						<!-- <a href="#" class="header-link">о компании</a> -->
-					</li>
-					<li class="header-item">
 						<a href="#" class="header-link">контакты</a>
 					</li>
 					<li class="header-item services">
@@ -104,7 +99,7 @@
 					<span>строительство пристроек</span>
 				</h1>
 				<div class="form-container">
-					<div class="top-form-img"></div>
+					<div class="top-form-img extens-hero"></div>
 					<div class="main-form">
 						<p class="form-descr">Рассчитайте стоимость вашего домика прямо сейчас</p>
 						<form class="tgs">
@@ -130,7 +125,62 @@
 	<div class="our-work">
 		<div class="work-wrap">
             <h3><span>Наши работы</span></h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam laudantium iure commodi quos sint architecto nostrum laboriosam! Id similique a accusamus sit, consectetur doloremque voluptatem minus expedita mollitia aliquid repudiandae alias soluta pariatur quo. Sit repellat iusto eligendi laborum voluptate quas minus? Nesciunt provident sit molestiae officia enim quas nostrum quidem deleniti magnam cupiditate voluptates iusto a optio pariatur, aliquid inventore exercitationem culpa reprehenderit? Qui ipsa rem maxime, sunt eum dignissimos deleniti exercitationem fugiat nihil quidem nesciunt reprehenderit ducimus maiores accusantium, culpa vitae, deserunt eius repellendus nulla! Pariatur sint voluptas error voluptate ad exercitationem odit eos illum corrupti eligendi deleniti ea quam atque accusamus dolorum dolorem, quaerat quas reiciendis culpa, ratione quidem quibusdam! Impedit quos consequatur molestias at, repellendus quisquam voluptatem perspiciatis corporis cupiditate neque dolor error aspernatur voluptatibus tenetur in doloribus praesentium similique. Sed quasi delectus totam numquam provident! Eveniet, ratione ullam. Dolorem sed mollitia reprehenderit aut dolore dolorum consectetur ipsum eligendi, perspiciatis pariatur nam placeat illo a voluptate vel, explicabo ab. Dolorum in explicabo inventore saepe maiores vel ea eos ab? Ipsum suscipit reiciendis esse consequuntur quos accusantium, distinctio magni possimus cumque officia explicabo facilis sapiente vitae, aut culpa in ratione deleniti, aperiam necessitatibus quis rem nisi! Eos?</p>
+			<div class="cage pswp-gallery" id="my-gallery">
+				<div class="parent">
+					<a href="./img/extens-img/extens-001.jpg"
+					data-pswp-width="1600"
+					data-pswp-height="900"
+					data-cropped="true"
+					target="_blank">
+						<div class="child bg-001"></div>
+					</a>
+				</div>
+				<div class="parent">
+					<a href="./img/extens-img/extens-002.jpg" 
+					data-pswp-width="1152"
+					data-pswp-height="648"
+					data-cropped="true"
+					target="_blank">
+						<div class="child bg-002"></div>
+					</a>
+				</div>
+				<div class="parent">
+					<a href="./img/extens-img/extens-003.jpg" 
+					data-pswp-width="1600"
+					data-pswp-height="1200"
+					data-cropped="true"
+					target="_blank">
+						<div class="child bg-003"></div>
+					</a>
+				</div>
+				<div class="parent">
+					<a href="./img/extens-img/extens-004.jpg" 
+					data-pswp-width="1030"
+					data-pswp-height="576"
+					data-cropped="true"
+					target="_blank">
+						<div class="child bg-004"></div>
+					</a>
+				</div>
+				<div class="parent">
+					<a href="./img/extens-img/extens-005.jpg" 
+					data-pswp-width="1200"
+					data-pswp-height="1600"
+					data-cropped="true"
+					target="_blank">
+						<div class="child bg-005"></div>
+					</a>
+				</div>
+				<div class="parent">
+					<a href="./img/extens-img/extens-006.jpg" 
+					data-pswp-width="1280"
+					data-pswp-height="960"
+					data-cropped="true"
+					target="_blank">
+						<div class="child bg-006"></div>
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
 	<footer id="footer">
@@ -192,6 +242,7 @@
 	<script type="module" src="./index.js"></script>
 	<!-- PARALLAX -->
 	 <script src="./parallax.js"></script>
+	 <script type="module" src="./photo-swipe.js"></script>
 	 <script>
 		new universalParallax().init({
 			speed: 4
