@@ -323,6 +323,10 @@ ul {
 	position: relative;
 }
 
+.services-label {
+	cursor: pointer;
+}
+
 .accordeon label {
 	display: inline-block;
 }
@@ -506,6 +510,10 @@ h1 span {
 
 .extens-hero {
 	background-image: url(./img/extense-hero.jpg);
+}
+
+.veranda-hero {
+	background-image: url(/img/veranda.jpg);
 }
 
 .form-content, .inner-content {
@@ -786,6 +794,54 @@ h3 span {
 
 .bg-006 {
 	background-image: url(./img/extens-img/previmg/extens-006-prv.jpg);
+}
+
+.vr-001 {
+	background-image: url(./img/veranda/previmg/veranda-01-prv.jpeg);
+}
+
+.vr-002 {
+	background-image: url(./img/veranda/previmg/veranda-02-prv.jpeg);
+}
+
+.vr-003 {
+	background-image: url(./img/veranda/previmg/veranda-03-prv.jpeg);
+}
+
+.vr-004 {
+	background-image: url(./img/veranda/previmg/veranda-04-prv.jpeg);
+}
+
+.vr-005 {
+	background-image: url(./img/veranda/previmg/veranda-05-prv.jpg);
+}
+
+.vr-006 {
+	background-image: url(./img/veranda/previmg/veranda-06-prv.jpg);
+}
+
+.vr-007 {
+	background-image: url(./img/veranda/previmg/veranda-07-prv.jpg);
+}
+
+.vr-008 {
+	background-image: url(./img/veranda/previmg/veranda-08-prv.jpg);
+}
+
+.vr-009 {
+	background-image: url(./img/veranda/previmg/veranda-09-prv.jpg);
+}
+
+.vr-010 {
+	background-image: url(./img/veranda/previmg/veranda-10-prv.jpg);
+}
+
+.vr-011 {
+	background-image: url(./img/veranda/previmg/veranda-11-prv.jpg);
+}
+
+.vr-012 {
+	background-image: url(./img/veranda/previmg/veranda-12-prv.jpg);
 }
 
 h4 {
