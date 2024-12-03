@@ -513,7 +513,7 @@ h1 span {
 }
 
 .veranda-hero {
-	background-image: url(/img/veranda.jpg);
+	background-image: url(./img/veranda.jpg);
 }
 
 .form-content, .inner-content {
