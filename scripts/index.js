@@ -1,4 +1,4 @@
-import {CHAT_ID, URL_API} from './environment/key.js'
+import {CHAT_ID, URL_API} from '../environment/key.js'
 const buttonOpen = document.querySelector('.burger');
 const buttonClose = document.querySelector('.close-btn');
 const lightField = document.querySelector('.backdrop');

@@ -516,6 +516,10 @@ h1 span {
 	background-image: url(./img/veranda.jpg);
 }
 
+.repair-hero {
+	background-image: url(./img/repair.jpg);
+}
+
 .form-content, .inner-content {
 	position: relative;
 	margin-bottom: 20px;
