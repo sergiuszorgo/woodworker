@@ -516,6 +516,10 @@ h1 span {
 	background-image: url(./img/veranda.jpg);
 }
 
+.repair-hero {
+	background-image: url(./img/repair.jpg);
+}
+
 .form-content, .inner-content {
 	position: relative;
 	margin-bottom: 20px;
@@ -842,6 +846,46 @@ h3 span {
 
 .vr-012 {
 	background-image: url(./img/veranda/previmg/veranda-12-prv.jpg);
+}
+
+.rr-001 {
+	background-image: url(./img/repair/previmg/greenroof-01-prv.jpg);
+}
+
+.rr-002 {
+	background-image: url(./img/repair/previmg/greenroof-02-prv.jpg);
+}
+
+.rr-003 {
+	background-image: url(./img/repair/previmg/greenroof-03-prv.jpg);
+}
+
+.rr-004 {
+	background-image: url(./img/repair/previmg/greenroof-04-prv.jpg);
+}
+
+.rr-005 {
+	background-image: url(./img/whitehouse/previmg/whitehouse-01-prv.jpg);
+}
+
+.rr-006 {
+	background-image: url(./img/whitehouse/previmg/whitehouse-02-prv.jpg);
+}
+
+.rr-007 {
+	background-image: url(./img/whitehouse/previmg/whitehouse-03-prv.jpg);
+}
+
+.rr-008 {
+	background-image: url(./img/whitehouse/previmg/whitehouse-04-prv.jpg);
+}
+
+.rr-009 {
+	background-image: url(./img/whitehouse/previmg/whitehouse-05-prv.jpg);
+}
+
+.rr-010 {
+	background-image: url(./img/whitehouse/previmg/whitehouse-06-prv.jpg);
 }
 
 h4 {
