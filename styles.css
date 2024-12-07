@@ -520,6 +520,10 @@ h1 span {
 	background-image: url(./img/repair.jpg);
 }
 
+.canopy-hero {
+	background-image: url(./img/canopy-hero.jpg);
+}
+
 .form-content, .inner-content {
 	position: relative;
 	margin-bottom: 20px;
@@ -887,6 +891,31 @@ h3 span {
 .rr-010 {
 	background-image: url(./img/whitehouse/previmg/whitehouse-06-prv.jpg);
 }
+
+.cp-001 {
+	background-image: url(./img/canopy/previmg/canopy-01-prv.jpg);
+}
+
+.cp-002 {
+	background-image: url(./img/canopy/previmg/canopy-02-prv.jpg);
+}
+
+.cp-003 {
+	background-image:url(./img/canopy/previmg/canopy-03-prv.jpg);
+}
+
+.cp-004 {
+	background-image: url(./img/canopy/previmg/canopy-04-prv.jpg);
+}
+
+.cp-005 {
+	background-image: url(./img/canopy/previmg/canopy-05-prv.jpg);
+}
+
+.cp-006 {
+	background-image: url(./img/canopy/previmg/canopy-06-prv.jpg);
+}
+
 
 h4 {
 	font-weight: 500;
