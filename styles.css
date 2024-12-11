@@ -524,6 +524,10 @@ h1 span {
 	background-image: url(./img/canopy-hero.jpg);
 }
 
+.construct-hero {
+	background-image: url(./img/construct-hero.jpg);
+}
+
 .form-content, .inner-content {
 	position: relative;
 	margin-bottom: 20px;
@@ -696,7 +700,7 @@ h3 span {
 	margin-bottom: 20px;
 }
 
-.serv-item:hover, .serv-item:focus {
+.serv-item:hover, .serv-item:focus, .build-item:hover, .build-item:focus {
 	box-shadow: var(--box-shadow1);
 }
 
@@ -740,6 +744,101 @@ h3 span {
 	padding: 35px 20px;
 	margin: 0 auto;
 }
+
+/* //BUILD CARDS LIST */
+/* //BUILD CARDS LIST */
+
+.build-list {
+	columns: 300px;
+	column-gap: 10px;
+	margin-top: 30px;
+}
+
+.build-img {
+	border-top-left-radius: var(--b-radius);
+	border-top-right-radius: var(--b-radius);
+}
+
+.build-item {
+	margin-bottom: 10px;
+	border-radius: var(--b-radius);
+	border: 1px solid rgba(140, 140, 140, 0.3);
+}
+
+.build-img {
+	background-image: url(./img/card-05.jpg);
+	width: 100%;
+	height: 250px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.build-text {
+	background-color: var(--second);
+	border-bottom-left-radius: var(--b-radius);
+	border-bottom-right-radius: var(--b-radius);
+	padding: 30px 20px;
+}
+
+.build-text-one {
+	font-size: 1.25em;
+	font-weight: 700;
+	line-height: 1.35;
+}
+
+.build-text-two {
+	font-size: 0.9em;
+	margin-top: 8px;	
+}
+
+.build-text-three {
+	margin-top: 12px;	
+	font-size: 2em;
+	color: var(--accent-color);
+	font-weight: 500;
+}
+
+.build-box {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 8px;
+}
+
+.link-btn {
+	cursor: pointer;
+	display: inline-block;
+	padding: 10px 20px;
+	color: var(--accent-color);
+	background-color: var(--second);
+	border-radius: var(--b-radius);
+	transition: var(--transit);
+	border: 1px solid var(--accent-color);
+}
+
+.link-btn:hover {
+	background-color: var(--accent-color);
+	color: var(--second);
+	border: 1px solid transparent;
+}
+
+.build-btn {
+	cursor: pointer;
+	display: inline-block;
+	border: 1px solid transparent;
+	padding: 10px 20px;
+	color: var(--second);
+	background-color: var(--accent-color);
+	border-radius: var(--b-radius);
+	transition: var(--transit);
+}
+
+.build-btn:hover {
+	color: var(--accent-color);
+	border: 1px solid var(--accent-color);
+	background-color: transparent;
+}
+
 
 /* GALLERY  */
 
