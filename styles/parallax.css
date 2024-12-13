@@ -61,11 +61,11 @@
 }
 
 .bg1 {
-	background-image: url("./img/fonhero.jpg");
+	background-image: url("../img/fonhero.jpg");
 }
 
 .bg2 {
-	background-image: url("./img/parallax-2.jpg");
+	background-image: url("../img/parallax-2.jpg");
 }
 
 /* .show-on-mobile--inline {
