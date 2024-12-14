@@ -152,6 +152,27 @@
 	z-index: 100;
 }
 
+.modal-overlay::before {
+	position: absolute;
+	content: '\279D';
+	transform: rotate(180deg);
+	top: 4px;
+	left: 5vw;
+	color: #db7254;
+	font-size: 3em;
+}
+
+.modal-overlay::after {
+	position: absolute;
+	content: "\002B";
+	transform: rotate(45deg);
+	top: -18px;
+	right: 4vw;
+	color: #db7254;
+	font-size: 5em;
+	font-weight: 100;
+}
+
 .modal {
 	overflow: scroll;
 	background-color: #fff;
@@ -161,251 +182,50 @@
 	display: none;
 }
 
-.modal-img-cont {
+.content {
 	width: 100%;
-	height: 450px;
-	overflow: hidden;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
 }
 
-/* //MODAL CARDS URL  */
-/* //MODAL CARDS URL  */
-
-.modal-img-01 {
-	background-image: url(../img/houses/01/15002000_PH.jpg);
+.img-wrap {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.modal-img-01:hover {
-	background-image: url(../img/houses/01/15002000.jpg);
+.big {
+	display: none;
+	width: 100%;
+	height: auto;
 }
 
-.modal-img-02 {
-	background-image: url(../img/houses/02/15003000_PH.jpg);
+.big.visible {
+	display: block;
 }
 
-.modal-img-02:hover {
-	background-image: url(../img/houses/02/15003000.jpg);
+.inp-lab-wrap {
+	display: flex;
+	margin-top: 10px;
+	gap: 10px;
 }
 
-.modal-img-03 {
-	background-image: url(../img/houses/03/15004000_PH.jpg);
+.pico {
+	width: 100px;
+	height: auto;
+	padding: 0;
+	display: block;
 }
 
-.modal-img-03:hover {
-	background-image: url(../img/houses/03/15004000.jpg);
+.inp {
+	display: none;
 }
 
-.modal-img-04 {
-	background-image: url(../img/houses/04/15005000_PH.jpg);
+.inp:checked + label{
+	outline: 1px solid #db7254;
 }
-
-.modal-img-04:hover {
-	background-image: url(../img/houses/04/15005000.jpg);
-}
-
-.modal-img-05 {
-	background-image: url(../img/houses/05/15006000_PH.jpg);
-}
-
-.modal-img-05:hover {
-	background-image: url(../img/houses/05/15006000.jpg);
-}
-
-.modal-img-06 {
-	background-image: url(../img/houses/06/20002000_PH.jpg);
-}
-
-.modal-img-06:hover {
-	background-image: url(../img/houses/06/20002000.jpg);
-}
-
-.modal-img-07 {
-	background-image: url(../img/houses/07/20002000_2_PH.jpg);
-}
-
-.modal-img-07:hover {
-	background-image: url(../img/houses/07/20002000_2.jpg);
-}
-
-.modal-img-08 {
-	background-image: url(../img/houses/08/20003000_PH.jpg);
-}
-
-.modal-img-08:hover {
-	background-image: url(../img/houses/08/20003000.jpg);
-}
-
-.modal-img-09 {
-	background-image: url(../img/houses/09/20003000_2_PH.jpg);
-}
-
-.modal-img-09:hover {
-	background-image: url(../img/houses/09/20003000_2.jpg);
-}
-
-.modal-img-10 {
-	background-image: url(../img/houses/10/20004000_PH.jpg);
-}
-
-.modal-img-10:hover {
-	background-image: url(../img/houses/10/20004000.jpg);
-}
-
-.modal-img-11 {
-	background-image: url(../img/houses/11/20004000_2_PH.jpg);
-}
-
-.modal-img-11:hover {
-	background-image: url(../img/houses/11/20004000_2.jpg);
-}
-
-.modal-img-12 {
-	background-image: url(../img/houses/12/20004000_3_PH.jpg);
-}
-
-.modal-img-12:hover {
-	background-image: url(../img/houses/12/20004000_3.jpg);
-}
-
-.modal-img-13 {
-	background-image: url(../img/houses/13/20005000_PH.jpg);
-}
-
-.modal-img-13:hover {
-	background-image: url(../img/houses/13/20005000.jpg);
-}
-
-.modal-img-14 {
-	background-image: url(../img/houses/14/20005000__PH.jpg);
-}
-
-.modal-img-14:hover {
-	background-image: url(../img/houses/14/20005000_.jpg);
-}
-
-.modal-img-15 {
-	background-image: url(../img/houses/15/20006000_1_PH.jpg);
-}
-
-.modal-img-15:hover {
-	background-image: url(../img/houses/15/20006000.jpg);
-}
-
-.modal-img-16 {
-	background-image: url(../img/houses/16/20006000_2_PH.jpg);
-}
-
-.modal-img-16:hover {
-	background-image: url(../img/houses/16/20006000_2.jpg);
-}
-
-.modal-img-17 {
-	background-image: url(../img/houses/17/20006000_3_PH.jpg);
-}
-
-.modal-img-17:hover {
-	background-image: url(../img/houses/17/20006000_3.jpg);
-}
-
-.modal-img-18 {
-	background-image: url(../img/houses/18/20007000_PH.jpg);
-}
-
-.modal-img-18:hover {
-	background-image: url(../img/houses/18/20007000.jpg);
-}
-
-.modal-img-19 {
-	background-image: url(../img/houses/19/30003000_PH.jpg);
-}
-
-.modal-img-19:hover {
-	background-image: url(../img/houses/19/30003000.jpg);
-}
-
-.modal-img-20 {
-	background-image: url(../img/houses/20/30003000___PH.jpg);
-}
-
-.modal-img-20:hover {
-	background-image: url(../img/houses/20/30003000__.jpg);
-}
-
-.modal-img-21 {
-	background-image: url(../img/houses/21/30003000____PH.jpg);
-}
-
-.modal-img-21:hover {
-	background-image: url(../img/houses/21/30003000.jpg);
-}
-
-.modal-img-22 {
-	background-image: url(../img/houses/22/30004000_PH.jpg);
-}
-
-.modal-img-22:hover {
-	background-image: url(../img/houses/22/30004000.jpg);
-}
-
-.modal-img-23 {
-	background-image: url(../img/houses/23/30005000_PH.jpg);
-}
-
-.modal-img-23:hover {
-	background-image: url(../img/houses/23/30005000.jpg);
-}
-
-.modal-img-24 {
-	background-image: url(../img/houses/24/30006000_PH.jpg);
-}
-
-.modal-img-24:hover {
-	background-image: url(../img/houses/24/30006000.jpg);
-}
-
-.modal-img-25 {
-	background-image: url(../img/houses/25/30007000_PH.jpg);
-}
-
-.modal-img-25:hover {
-	background-image: url(../img/houses/25/30007000.jpg);
-}
-
-.modal-img-26 {
-	background-image: url(../img/houses/26/40004000_PH.jpg);
-}
-
-.modal-img-26:hover {
-	background-image: url(../img/houses/26/40004000.jpg);
-}
-
-.modal-img-27 {
-	background-image: url(../img/houses/27/40005000_PH.jpg);
-}
-
-.modal-img-27:hover {
-	background-image: url(../img/houses/27/40005000.jpg);
-}
-
-.modal-img-28 {
-	background-image: url(../img/houses/28/40006000_PH.jpg);
-}
-
-.modal-img-28:hover {
-	background-image: url(../img/houses/28/40006000.jpg);
-}
-
-.modal-img-29 {
-	background-image: url(../img/houses/29/40007000_PH.jpg);
-}
-
-.modal-img-29:hover {
-	background-image: url(../img/houses/29/40007000.jpg);
-}
-
-
 
 .modal-text-cont {
 	width: 100%;
@@ -419,6 +239,7 @@
 
 .modal--visible {
 	display: block;
+	/* gap: 40px; */
 }
 
 .modal-text-row, .modal-text-u, .modal-text-b {
@@ -447,3 +268,12 @@
 .modal-text-b {
 	font-weight: 700;
 }
+
+@media screen and (min-width: 1200px) {
+	.modal--visible {
+		display: grid;
+		grid-template-columns: 45% auto;
+		gap: 20px;
+	}
+}
+
