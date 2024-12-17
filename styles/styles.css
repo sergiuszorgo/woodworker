@@ -867,6 +867,34 @@ h3 span {
 
 /* SLIDERIMGIIIIS */
 
+.ch-001 {
+	background-image: url(../img/construct-houses/placeholder.jpg);
+}
+
+/* .bg-001 {
+	background-image: url(../img/extens-img/previmg/extens-001-prv.jpg);
+}
+
+.bg-002 {
+	background-image: url(../img/extens-img/previmg/extens-002-prv.jpg);
+}
+
+.bg-003 {
+	background-image: url(../img/extens-img/previmg/extens-003-prv.jpg);
+}
+
+.bg-004 {
+	background-image: url(../img/extens-img/previmg/extens-004-prv.jpg);
+}
+
+.bg-005 {
+	background-image: url(../img/extens-img/previmg/extens-005-prv.jpg);
+}
+
+.bg-006 {
+	background-image: url(../img/extens-img/previmg/extens-006-prv.jpg);
+} */
+
 .bg-001 {
 	background-image: url(../img/extens-img/previmg/extens-001-prv.jpg);
 }
@@ -1036,7 +1064,13 @@ h4 {
 	background: rgba(0, 0, 0, .5);
 }
 
-.whyme-wrap, .whyform-wrap {
+.whyme-wrap {
+	max-width: 1200px;
+	padding: 8px 20px;
+	margin: 0 auto;
+}
+
+.whyform-wrap {
 	max-width: 1200px;
 	padding: 70px 20px;
 	margin: 0 auto;
@@ -1058,7 +1092,7 @@ h4 {
 
 .why-text1 {
 	color: var(--accent-color);
-	font-size: 4em;
+	font-size: 3em;
 	font-weight: 600;
 	letter-spacing: 0.09em;
 }
@@ -1231,10 +1265,12 @@ h4 {
 
 .table-ext th:first-child, .table-ext td:first-child {
   width: 30vw;
+  max-width: 462px;
 }
 
 .table-ext th:nth-child(2), .table-ext td:nth-child(2) {
   width: 30vw;
+  max-width: 462px;
 }
 
 
@@ -1250,7 +1286,6 @@ h4 {
 .table_col th span {
 	font-weight: 600;
 }
-
 
 .table_col td {
 	border-right: 20px solid var(--second);
@@ -1531,6 +1566,12 @@ footer {
 	}
 	.parent {
 		width: calc((100% - 40px) / 3);
+	}
+	.whyme-wrap {
+		padding: 70px 20px;
+	}
+	.why-text1 {
+		font-size: 4em;
 	}
 	.table_col {
 		font-size: 1.1em;
