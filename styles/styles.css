@@ -231,6 +231,16 @@ ul {
 	height: 2.25em;
 }
 
+.invis::after {
+	position: absolute;
+	content: '';
+	width: 480px;
+	height: 30px;
+	background-color: transparent;
+	top: -25px;
+	left: 0;
+}
+
 .invis-link {
 	padding: 10px;
 	margin: 0;
